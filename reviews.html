@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - Savoria Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Savoria</h1>
+        <p>Fine Dining</p>
+      </div>
+      <nav>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order Online</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reviews.html" class="active">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <div class="container">
+      <h1>Customer Reviews</h1>
+      <p>See what our guests are saying about their experience at Savoria</p>
+    </div>
+  </section>
+
+  <!-- Reviews Overview -->
+  <section class="reviews-overview">
+    <div class="container">
+      <div class="rating-summary">
+        <div class="overall-rating">
+          <h2>Overall Rating</h2>
+          <div class="rating-large">4.8</div>
+          <div class="stars-large">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>Based on 248 reviews</p>
+        </div>
+        
+        <div class="rating-breakdown">
+          <h2>Rating Breakdown</h2>
+          <div class="rating-bar">
+            <span class="rating-label">Food</span>
+            <div class="bar-container">
+              <div class="bar" style="width: 96%"></div>
+            </div>
+            <span class="rating-score">4.8</span>
+          </div>
+          <div class="rating-bar">
+            <span class="rating-label">Service</span>
+            <div class="bar-container">
+              <div class="bar" style="width: 94%"></div>
+            </div>
+            <span class="rating-score">4.7</span>
+          </div>
+          <div class="rating-bar">
+            <span class="rating-label">Ambiance</span>
+            <div class="bar-container">
+              <div class="bar" style="width: 98%"></div>
+            </div>
+            <span class="rating-score">4.9</span>
+          </div>
+          <div class="rating-bar">
+            <span class="rating-label">Value</span>
+            <div class="bar-container">
+              <div class="bar" style="width: 90%"></div>
+            </div>
+            <span class="rating-score">4.5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews List -->
+  <section class="reviews-list">
+    <div class="container">
+      <h2 class="section-title">Customer Testimonials</h2>
+      
+      <div class="reviews-filter">
+        <select id="sort-reviews">
+          <option value="newest">Newest First</option>
+          <option value="highest">Highest Rated</option>
+          <option value="lowest">Lowest Rated</option>
+        </select>
+      </div>
+      
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-img" style="background-image: url('img/reviewer1.jpg')"></div>
+              <div>
+                <h3>Emily Johnson</h3>
+                <p class="review-date">October 15, 2023</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"My husband and I celebrated our anniversary at Savoria last weekend, and it was absolutely perfect. The truffle pasta was divine, and the service was impeccable. Every detail was thoughtfully taken care of, making our special night truly memorable. We'll definitely be back!"</p>
+          </div>
+        </div>
+        
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-img" style="background-image: url('img/reviewer2.jpg')"></div>
+              <div>
+                <h3>Michael Rodriguez</h3>
+                <p class="review-date">October 10, 2023</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"As a food critic, I've dined at restaurants all over the world, and Savoria stands among the best. Chef Laurent's innovative menu beautifully balances tradition and creativity. The seasonal tasting menu with wine pairings was exceptional, showcasing local ingredients in surprising and delightful ways."</p>
+          </div>
+        </div>
+        
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-img" style="background-image: url('img/reviewer3.jpg')"></div>
+              <div>
+                <h3>Jennifer Liu</h3>
+                <p class="review-date">October 5, 2023</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"I hosted a business dinner at Savoria and was thoroughly impressed. The private dining room was elegant, the food was exceptional, and the staff was attentive without being intrusive. My clients were wowed, which is exactly what I was hoping for. The sommelier's recommendations perfectly complemented our meal."</p>
+          </div>
+        </div>
+        
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-img" style="background-image: url('img/reviewer4.jpg')"></div>
+              <div>
+                <h3>David Thompson</h3>
+                <p class="review-date">September 28, 2023</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"The food at Savoria is outstanding - I particularly recommend the filet mignon, cooked to perfection. The ambiance is elegant yet comfortable. My only criticism would be that the service was a bit slow during our visit, though the staff was very friendly and knowledgeable. Still a wonderful dining experience overall."</p>
+          </div>
+        </div>
+        
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-img" style="background-image: url('img/reviewer5.jpg')"></div>
+              <div>
+                <h3>Sarah Williams</h3>
+                <p class="review-date">September 22, 2023</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"As someone with dietary restrictions, dining out can be challenging, but Savoria made it a pleasure. The chef created a special vegan tasting menu for me that was creative, beautiful, and absolutely delicious. My non-vegan friends were actually jealous of my dishes! It's refreshing to find a fine dining establishment that takes such care with special diets."</p>
+          </div>
+        </div>
+        
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-img" style="background-image: url('img/reviewer6.jpg')"></div>
+              <div>
+                <h3>Robert Chen</h3>
+                <p class="review-date">September 15, 2023</p>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>"We ordered takeout from Savoria during the pandemic and were blown away by how well the experience translated to home dining. The packaging was eco-friendly, the food arrived hot and beautifully presented, and it tasted just as amazing as in the restaurant. The attention to detail even extended to clear reheating instructions and a QR code linking to a playlist to enhance the meal."</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Write a Review -->
+  <section class="write-review">
+    <div class="container">
+      <h2 class="section-title">Write a Review</h2>
+      <p class="section-description">Share your dining experience at Savoria</p>
+      
+      <form id="review-form" action="process_review.php" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reviewer-name">Your Name</label>
+            <input type="text" id="reviewer-name" name="reviewer-name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="reviewer-email">Email (will not be published)</label>
+            <input type="email" id="reviewer-email" name="reviewer-email" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Your Rating</label>
+          <div class="rating-select">
+            <input type="radio" id="star5" name="rating" value="5" required>
+            <label for="star5"><i class="fas fa-star"></i></label>
+            
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4"><i class="fas fa-star"></i></label>
+            
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3"><i class="fas fa-star"></i></label>
+            
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2"><i class="fas fa-star"></i></label>
+            
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1"><i class="fas fa-star"></i></label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="review-text">Your Review</label>
+          <textarea id="review-text" name="review-text" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn primary-btn">Submit Review</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>Savoria Restaurant</h3>
+          <p>We are committed to providing the finest dining experience with locally sourced ingredients and exceptional service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section hours">
+          <h3>Opening Hours</h3>
+          <p>Monday - Friday: 11am - 10pm</p>
+          <p>Saturday - Sunday: 10am - 11pm</p>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@savoria.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Savoria Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>

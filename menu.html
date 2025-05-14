@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Savoria Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section (Same as index.html) -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Savoria</h1>
+        <p>Fine Dining</p>
+      </div>
+      <nav>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="order.html">Order Online</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <div class="container">
+      <h1>Our Menu</h1>
+      <p>Discover our culinary masterpieces made with the freshest ingredients</p>
+    </div>
+  </section>
+
+  <!-- Menu Categories -->
+  <section class="menu-categories">
+    <div class="container">
+      <div class="category-filters">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="appetizers">Appetizers</button>
+        <button class="category-btn" data-category="main-courses">Main Courses</button>
+        <button class="category-btn" data-category="desserts">Desserts</button>
+        <button class="category-btn" data-category="drinks">Drinks</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Items -->
+  <section class="menu-items">
+    <div class="container">
+      <div class="menu-grid">
+        <!-- Appetizers -->
+        <div class="menu-category" id="appetizers">
+          <h2>Appetizers</h2>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/tomato-bruschetta.jpg')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Tomato Bruschetta</h3>
+                <span class="price">$12</span>
+              </div>
+              <p class="description">Toasted sourdough bread topped with diced tomatoes, fresh basil, and garlic</p>
+              <button class="btn small-btn add-to-cart" data-id="app1" data-name="Tomato Bruschetta" data-price="12">Add to Order</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/Calamari-5.jpg')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Crispy Calamari</h3>
+                <span class="price">$14</span>
+              </div>
+              <p class="description">Lightly fried calamari served with lemon aioli and marinara sauce</p>
+              <button class="btn small-btn add-to-cart" data-id="app2" data-name="Crispy Calamari" data-price="14">Add to Order</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Main Courses -->
+        <div class="menu-category" id="main-courses">
+          <h2>Main Courses</h2>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/grilled\ salmon.jpg')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Grilled Salmon</h3>
+                <span class="price">$28</span>
+              </div>
+              <p class="description">Wild-caught salmon with lemon butter sauce, served with asparagus and rice pilaf</p>
+              <button class="btn small-btn add-to-cart" data-id="main1" data-name="Grilled Salmon" data-price="28">Add to Order</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/Filet-Mignon.jpg')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Filet Mignon</h3>
+                <span class="price">$34</span>
+              </div>
+              <p class="description">8oz grass-fed beef tenderloin with red wine reduction, served with truffle mashed potatoes</p>
+              <button class="btn small-btn add-to-cart" data-id="main2" data-name="Filet Mignon" data-price="34">Add to Order</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desserts -->
+        <div class="menu-category" id="desserts">
+          <h2>Desserts</h2>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/Classic\ Tiramisu.avif')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Classic Tiramisu</h3>
+                <span class="price">$10</span>
+              </div>
+              <p class="description">Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder</p>
+              <button class="btn small-btn add-to-cart" data-id="dessert1" data-name="Classic Tiramisu" data-price="10">Add to Order</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/New\ York\ Cheesecake.jpg')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>New York Cheesecake</h3>
+                <span class="price">$12</span>
+              </div>
+              <p class="description">Creamy cheesecake with a graham cracker crust, topped with fresh berries</p>
+              <button class="btn small-btn add-to-cart" data-id="dessert2" data-name="New York Cheesecake" data-price="12">Add to Order</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Drinks -->
+        <div class="menu-category" id="drinks">
+          <h2>Drinks</h2>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/HOUSE-WINES.jpg')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>House Red Wine</h3>
+                <span class="price">$9</span>
+              </div>
+              <p class="description">Glass of our house selection Cabernet Sauvignon</p>
+              <button class="btn small-btn add-to-cart" data-id="drink1" data-name="House Red Wine" data-price="9">Add to Order</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-img" style="background-image: url('images/signature\ cocktail.jpg')"></div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Signature Cocktail</h3>
+                <span class="price">$12</span>
+              </div>
+              <p class="description">Our signature blend of premium vodka, fresh citrus, and herbs</p>
+              <button class="btn small-btn add-to-cart" data-id="drink2" data-name="Signature Cocktail" data-price="12">Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cart-notification">
+    <p>Item added to your order!</p>
+    <a href="order.html" class="btn small-btn">View Order</a>
+  </div>
+
+  <!-- Footer (Same as index.html) -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>Savoria Restaurant</h3>
+          <p>We are committed to providing the finest dining experience with locally sourced ingredients and exceptional service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section hours">
+          <h3>Opening Hours</h3>
+          <p>Monday - Friday: 11am - 10pm</p>
+          <p>Saturday - Sunday: 10am - 11pm</p>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@savoria.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Savoria Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

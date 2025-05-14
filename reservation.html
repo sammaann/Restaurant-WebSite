@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations - Savoria Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Savoria</h1>
+        <p>Fine Dining</p>
+      </div>
+      <nav>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order Online</a></li>
+          <li><a href="reservation.html" class="active">Reservations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <div class="container">
+      <h1>Make a Reservation</h1>
+      <p>Book your table and enjoy an unforgettable dining experience</p>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="reservation-section">
+    <div class="container">
+      <div class="reservation-grid">
+        <!-- Left side: Form -->
+        <div class="reservation-form-container">
+          <form id="reservation-form" action="process_reservation.php" method="post">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="text" id="date" name="date" class="datepicker" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="time">Time</label>
+                <select id="time" name="time" required>
+                  <option value="">Select Time</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select Number of Guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7+">7+ People (We'll contact you)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="special-requests">Special Requests</label>
+              <textarea id="special-requests" name="special-requests"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <p class="note">Note: For same-day reservations, please call us directly at (123) 456-7890.</p>
+            </div>
+            
+            <button type="submit" class="btn primary-btn">Book Table</button>
+          </form>
+        </div>
+        
+        <!-- Right side: Info -->
+        <div class="reservation-info">
+          <div class="info-box">
+            <h3>Reservation Information</h3>
+            <p><i class="fas fa-info-circle"></i> Reservations are held for 15 minutes past the reserved time.</p>
+            <p><i class="fas fa-info-circle"></i> For parties larger than 6, please call us for special arrangements.</p>
+            <p><i class="fas fa-info-circle"></i> We require a credit card for reservations on weekends and holidays.</p>
+            <p><i class="fas fa-info-circle"></i> For private events and special occasions, please contact us directly.</p>
+          </div>
+          
+          <div class="info-box">
+            <h3>Hours of Operation</h3>
+            <div class="hours-list">
+              <div class="hours-item">
+                <span class="day">Monday - Thursday:</span>
+                <span class="time">11:00 AM - 10:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="day">Friday - Saturday:</span>
+                <span class="time">11:00 AM - 11:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span class="day">Sunday:</span>
+                <span class="time">10:00 AM - 9:00 PM</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-box contact-info">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> reservations@savoria.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Confirmation Modal -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="confirmation-message">
+        <i class="fas fa-check-circle"></i>
+        <h2>Reservation Confirmed!</h2>
+        <p>Thank you for your reservation. We've sent a confirmation email with your details.</p>
+        <p class="reservation-details">
+          <span id="confirm-name"></span><br>
+          <span id="confirm-date"></span> at <span id="confirm-time"></span><br>
+          <span id="confirm-guests"></span>
+        </p>
+        <p>If you need to make changes, please contact us at (123) 456-7890.</p>
+        <button class="btn primary-btn close-confirm-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>Savoria Restaurant</h3>
+          <p>We are committed to providing the finest dining experience with locally sourced ingredients and exceptional service.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section hours">
+          <h3>Opening Hours</h3>
+          <p>Monday - Friday: 11am - 10pm</p>
+          <p>Saturday - Sunday: 10am - 11pm</p>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@savoria.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Savoria Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/main.js"></script>
+  <script src="js/reservation.js"></script>
+</body>
+</html>
